@@ -10,15 +10,17 @@ const Login = () => {
   return (
     <>
       <MyNavbar />
-      <form onSubmit={loginHandler}>
-        {/* <input
+      <div className="container">
+        <form onSubmit={loginHandler}>
+          {/* <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         /> */}
-        <button>Login</button>
-      </form>
+          <button className="btn_">Login</button>
+        </form>
+      </div>
     </>
   );
 };

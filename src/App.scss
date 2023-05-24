@@ -64,3 +64,64 @@ header {
     }
   }
 }
+.btn_ {
+  background-color: #759d75;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+.btn_holder {
+  text-align: center;
+}
+
+.landing_error_text {
+  font-size: 50px;
+  text-align: center;
+  color: #3d3d3d;
+}
+
+.list_wrap {
+  position: relative;
+  background: #e9e9e9;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: fit-content(200px) 1fr;
+  overflow: hidden;
+  & > span {
+    background: #414141;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 9px;
+  }
+  strong {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+  .data_wrapper {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr fit-content(200px);
+    .right_content {
+      a {
+        color: #000;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      button {
+        background: transparent;
+        border: 1px solid #a0a0a0;
+        padding: 4px 6px;
+        &.btn_del {
+          background: #c94c4c;
+          color: #fff;
+          box-shadow: none;
+          border-color: #c94c4c;
+        }
+      }
+    }
+  }
+}

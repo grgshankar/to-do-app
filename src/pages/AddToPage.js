@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import AuthCheck from "../middleware/AuthCheck";
+// import AuthCheck from "../middleware/AuthCheck";
 import MyNavbar from "../MyNavbar";
 
 const AddToPage = (props) => {
   const navigate = useNavigate();
   const [semName, setSemName] = useState("");
   const [courseName, setCourseName] = useState("");
-  AuthCheck();
+  //   AuthCheck();
   const addHandler = (e) => {
     e.preventDefault();
     const userInputData = {
